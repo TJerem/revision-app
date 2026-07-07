@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return jsonify(message="Usine logicielle", version=__version__)
 
+@app.get("/health")
+def health():
+    return jsonify(status="ok"), 200
+
 @app.get("/version")
 def version():
     return jsonify(version=__version__)
