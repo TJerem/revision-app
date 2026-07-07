@@ -1,0 +1,4 @@
+site_name: Usine Logicielle - Projet de revision
+theme: { name: material }
+nav:
+  - Accueil: index.md
