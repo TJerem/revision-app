@@ -1,0 +1,2 @@
+-r requirements.txt
+pytest pytest-cov ruff black bandit pip-audit
