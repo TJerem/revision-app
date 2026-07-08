@@ -1,4 +1,4 @@
-from src.app import app, version
+from src.app import app, __version__
 
 
 def test_index():
@@ -9,7 +9,7 @@ def test_index():
     assert response.status_code == 200
     assert response.get_json() == {
         "message": "Usine logicielle",
-        "version": version,
+        "version": __version__,
     }
 
 
@@ -31,5 +31,6 @@ def test_version():
 
     assert response.status_code == 200
     assert response.get_json() == {
-        "version": version,
+        "version": __version__,
     }
+
