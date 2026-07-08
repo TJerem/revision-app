@@ -33,4 +33,3 @@ def test_version():
     assert response.get_json() == {
         "version": __version__,
     }
-
